@@ -1,0 +1,15 @@
+// src/assets/scss/custom/structure/_page-heading.scss
+
+.page-heading {
+    @include flexStyle(center);
+    margin-bottom: 24px !important;
+    margin-top: 8px;
+    @include media-breakpoint-down(md) { 
+        align-items: start;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: '\e06f';
+        font-family: lucide;
+    }
+}

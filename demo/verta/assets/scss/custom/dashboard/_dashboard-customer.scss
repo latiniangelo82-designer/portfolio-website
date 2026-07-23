@@ -1,0 +1,38 @@
+// src/assets/scss/custom/dashboard/_dashboard-customer.scss
+
+#customerGrowthChart{
+    .apexcharts-text{
+        fill: $text-muted !important;
+    }
+}
+.customer-widget{
+    .avatar{
+        border-radius: $border-radius-pills;
+        width: 40px;
+        height: 40px;
+        background: var(--bg-main);
+        .i-1{
+            color: var(--brand-color);
+        }
+        .i-2{
+            color: var(--orange--400);
+        }
+        .i-3{
+            color: var(--text-strong);
+        }
+    }
+}
+
+.map-dropdown-section{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .dropdown:nth-child(1){
+        margin-right: 8px;
+    }
+}
+
+.progress{
+    background: var(--bg-secondary);
+    width: 75%;
+}

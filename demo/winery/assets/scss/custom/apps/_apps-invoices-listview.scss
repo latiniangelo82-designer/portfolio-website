@@ -1,0 +1,17 @@
+// src/assets/scss/custom/apps/_apps-invoices-listview.scss
+
+.invoice-card {
+    transition: $transition-base;
+    cursor: pointer;
+    .view-btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        .view-btn {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

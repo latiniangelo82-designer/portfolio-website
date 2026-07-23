@@ -1,0 +1,535 @@
+// src/assets/scss/custom/components/_card.scss
+.card-body{
+    padding: 16px !important;
+    .card-content{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            .card-content-left{
+                display: flex;
+                align-content: flex-end;
+                justify-content: space-between;
+                width: 100%;
+                .card-content-left-perc{
+                    display: flex;
+                    align-content: flex-end;
+                    flex-wrap: wrap;
+                    .h3-1{
+                        color: var(--green-main); 
+                    }
+                    .h3-2{
+                        color: var(--brand-color); 
+                    }
+                    .h3-3{
+                        color: var(--orange--400); 
+                    }
+                }
+            }
+    }
+    .pie-chart{
+        height: calc(100% - 43px);
+    }
+    .pie-chart-stat{
+        .stat{
+            .stat-accepted{
+                .stat-pill{
+                    width: 19px;
+                    height: 19px;
+                    border-radius: $border-radius-pills;
+                    margin-right: 8px;
+                }
+            }
+            &:nth-child(1){
+                    .stat-pill{
+                        background: var(--primary-200);
+                    }
+                }
+                &:nth-child(2){
+                    .stat-pill{
+                        background: var(--orange--300);
+                    }
+                }
+                &:nth-child(3){
+                    .stat-pill{
+                        background: var(--secondary-300);
+                    }
+                }
+        }
+    }
+    
+}
+
+.card {
+    margin-bottom: $spacer;
+    box-shadow: $shadow-sm;
+
+    &.card-h-100 {
+        height: calc(100% - $spacer);
+    }
+
+    .card-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+    }
+    
+    .card-header {
+        padding-bottom: 0;
+        background-color: transparent;
+    }
+}
+.card-title {
+    font-size: 0.9375rem;
+}
+
+.card-hover-animate {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-0.25rem);
+    }
+}
+
+.basic-card {
+    overflow: hidden;
+    .card-img-left {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    .img-avatar {
+        top: 8%;
+        left: 23%;
+        .user {
+            height: 80px;
+            width: 80px;
+        }
+    }
+}
+
+.card-hover-effect {
+    @include transition;
+
+    .icon-bg {
+        height: 5rem;
+        width: 5rem;
+        @include flexStyle(center, center);
+    }
+
+    .icon-hover-bg {
+        @include position(absolute, 30px, null, null, 30px);
+        @include transition;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        transform: translateY(-6px);
+
+        .icon-hover-bg {
+            transform: scale(10);
+            border-radius: 100%;
+        }
+    }
+}
+
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: $gray-900;
+    opacity: 0.4;
+}
+
+.bg-overlay-cards {
+    @include transition;
+
+    img {
+        @include transition;
+    }
+
+    .main-title {
+        transform: translateY(80px);
+        @include transition;
+    }
+
+    .transform-text {
+        transform: translateY(100%);
+        opacity: 0;
+        @include transition;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+
+        .main-title {
+            transform: translateY(0px);
+        }
+
+        .transform-text {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* BEGIN CARD DESIGN */
+.fancy-card {
+  height: 400px;
+
+}
+.hero-description-bk {
+  border-radius: 25px;
+  position: absolute;
+  top: 55%;
+  left: -7px;
+  height: 65%;
+  width: 108%;
+  transform: skew(16deg, -9deg);
+}
+
+.card-body-sm{
+    padding: 12px;
+    flex: 1 1 auto;
+}
+
+.card-body-md{
+    padding: 24px;
+    flex: 1 1 auto;
+}
+
+.card{
+    border-radius: 12px !important;
+}
+
+.card-agents{
+    background: transparent;
+    box-shadow: none;
+    .card-header{
+        margin-bottom: 20px;
+        padding: 16px;
+    }
+    .card-header, .card-body{
+        background: #fff;
+        border-radius: 16px !important;
+    }
+}
+
+.property-card{
+    &:hover{
+        @include transition;
+        box-shadow: 0px 0px 1px 1px rgb(62 84 211);
+    }
+}
+
+.apt-detail-container{
+    width: calc(50% - 135px);
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 75px;
+    background: #fff;
+    padding: 16px;
+    .apt-detail-header{
+            display: none;
+        }
+    @media (max-width: 1199.98px) {
+        .apt-detail-header{
+            display: block;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+        width: calc(85% - 135px);
+        box-shadow: $shadow-md;
+        
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+    @media (max-width: 521px) {
+        .nav-link{
+            span{
+                display: none; 
+            }
+        }
+    }
+    .apt-detail-scroller{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: calc(100vh - 170px);
+    }
+    .referent-detail{
+        position: absolute;
+        width: 100%;
+        bottom: 75px;
+        left: 0;
+        z-index: 9;
+        padding: 12px;
+        box-shadow: $shadow-tp;
+    }
+
+}
+
+.property-gallery-wrapper{
+    width: 100%;
+    .gallery-main-container{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .gallery-thumb-container{
+        height: calc(50% - 8px);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.detail-docs{
+    i{
+        color: var(--green-main);
+    }
+}
+
+.offer-listing{
+    overflow-y: auto;
+    .card-offer {
+        padding: 16px;
+        border-radius: 16px;
+        box-shadow: $shadow-sm;
+        margin-top: 8px;
+        @media (max-width: 521px) {
+            width: 550px;
+        }
+    }
+}
+
+
+@media (max-width: 521px) {
+    .detail-docs{
+        .btn-secondary{
+            i{
+                margin: 0;
+            }
+            span{
+                display:none;
+            }
+        }
+    }
+}
+
+.wine-card{
+    background: var(--sourface-bg);
+    .wine-wrapper{
+        height: 231px;
+        background: var(--bg-secondary);
+        border-radius: 8px;
+        position: relative;
+        padding: 16px 0;
+        .badge-status{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+        img{
+            @include transition;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .card-title{
+        color: var(--text-main);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .card-year{
+        text-align: center;
+        .text-year{
+            color: var(--text-main);
+            display: block;
+            position: relative;
+            &:before{
+                content: "";
+                width: 38%;
+                height: 1px;
+                position: absolute;
+                background: var(--border-main);
+                left: 0;
+                top: 50%;
+            }
+            &:after{
+                content: "";
+                width: 38%;
+                height: 1px;
+                position: absolute;
+                background: var(--border-main);
+                right: 0;
+                top: 50%;
+            }
+        }
+    }
+
+    .text-price{
+        font-weight: bold;
+        color: var(--brand-color);
+    }
+    &:hover{
+        .wine-wrapper{
+            img{
+                
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+}
+
+.data-card{
+    position: relative;
+    .data-body{
+        display: flex;
+        align-items: center;
+        .data-icon{
+            width: 40px;
+            height: 40px;
+            border-radius: $border-radius-main;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            .fa-user-friends{
+                color: var(--text-main);
+            }
+            .fa-user-plus{
+                color: var(--text-accent);
+            }
+            .fa-wine-bottle{
+                color: var(--green-main);
+            }
+        }
+    }
+}
+
+.customer-card{
+    .customer-card-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .customer-card-user{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .customer-card-user-action{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .user-action-btn{
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--bg-secondary);
+                border-radius: $border-radius-main;
+                color: var(--text-main);
+                cursor: pointer;
+                @include transition;
+                &:hover{
+                    background: var(--secondary-color-light);
+                }
+            }
+        }
+    }
+    .customer-card-body{
+        padding: 20px 0;
+        border-top: 1px solid var(--border-main);
+        border-bottom: 1px solid var(--border-main);
+        .customer-card-body-info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+        }
+    }
+    .customer-card-footer{
+        padding-top: 20px;
+        .preferences-badges{
+            margin-top: 12px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  .customers-data{
+    display: none;
+  }
+}
+
+.profile-card{
+    .profile-card-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-card-info{
+            border-bottom: 1px solid var(--border-main);
+            .card-info-row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+        .profile-card-bio{
+            border-bottom: 1px solid var(--border-main);
+        }
+}
+
+.purchase-card-action{
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.vino-card-bg{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: $border-radius-main;
+    background: var(--bg-secondary);
+    padding: 12px;
+    .vino-card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; 
+        object-position: center; 
+    }
+}
+
+.wine-detail-card{
+    position: relative;
+    .badge-status{
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        z-index: 9;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-wine-detail{
+        margin-top: 20px;
+    }
+}

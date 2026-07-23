@@ -1,0 +1,17 @@
+$themes-topbar: (
+    "light": (
+        topbar-bg:                              #{$topbar-bg},
+    ),
+    "dark": (
+        topbar-bg:                              #{$topbar-dark-bg},
+    ),
+    "green": (
+        topbar-bg:                              #{$topbar-green-bg},
+    ),
+    "blue": (
+        topbar-bg:                             #{$topbar-blue-bg},
+    ),
+    "purple": (
+        topbar-bg:                              #{$topbar-purple-bg},
+    )
+);

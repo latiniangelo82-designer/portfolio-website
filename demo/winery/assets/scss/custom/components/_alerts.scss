@@ -1,0 +1,73 @@
+// src/assets/scss/custom/components/_alerts.scss
+
+.btn-close {
+    &::after {
+        content: "\eb98" !important;
+        font-size: 20px;
+        line-height: 15px;
+        color: var(--#{$prefix}btn-close-color);
+        font-family: "remixicon" !important;
+    }
+}
+
+.alert-live-backdrop {
+    backdrop-filter: blur(20px);
+}
+
+.alert-dismissible .btn-close {
+    &::after {
+        color: var(--#{$prefix}alert-color);
+    }
+}
+
+//Icons with Alerts
+.alert-icon {
+    position: relative;
+    @include flexStyle(center);
+    padding-left: 4rem;
+
+    .icon {
+        @include position(absolute, 0, null, 0, 0);
+        @include flexStyle(center, center);
+        width: 2.75rem;
+        border-right: 1px solid var(--#{$prefix}alert-border-color);
+    }
+}
+
+//Icons Alerts
+.icon-alert {
+    border-color: var(--#{$prefix}border-color);
+    overflow: hidden;
+
+    .icon {
+        @include flexStyle(center, center);
+    }
+}
+
+.info-gradient {
+    background: linear-gradient(to right, var(--#{$prefix}info), color-mix(in srgb, var(--#{$prefix}info) 55%, black 55%));
+}
+
+.primary-gradient {
+    background: linear-gradient(to right, var(--#{$prefix}primary), color-mix(in srgb, var(--#{$prefix}primary) 55%, black 40%));
+}
+
+.pink-gradient {
+    background: linear-gradient(to right, color-mix(in srgb, var(--#{$prefix}pink), black 25%), color-mix(in srgb, var(--#{$prefix}secondary) 35%, black 65%));
+}
+
+.orange-gradient {
+    background: linear-gradient(to right, var(--#{$prefix}orange), color-mix(in srgb, var(--#{$prefix}indigo) 25%, black 65%));
+}
+
+// Live Alerts
+#liveAlert {
+    @include position(fixed, 1.25rem, null, null, 50%);
+    transform: translateX(-50%);
+    z-index: $zindex-fixed;
+}
+
+// Basic Alerts
+.basic-alert {
+    @include flexStyle(center, center);
+}

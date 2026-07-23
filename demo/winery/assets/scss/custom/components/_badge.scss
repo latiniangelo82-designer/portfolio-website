@@ -1,0 +1,97 @@
+// src/assets/scss/custom/components/_badge.scss
+
+// Button Badge
+.notification {
+    @include badge-square;
+    border: 2px solid var(--#{$prefix}secondary-bg);
+    &.top-end {
+        @include position(absolute, -8px, -8px, null, null);
+    }
+
+    &.top-start {
+        @include position(absolute, -8px, null, null, -8px);
+    }
+
+    &.bottom-start {
+        @include position(absolute, null, null, -8px, -8px);
+    }
+
+    &.bottom-end {
+        @include position(absolute, null, -8px, -8px, null);
+    }
+
+    &.inside {
+        position: static;
+    }
+}
+
+.badge-square {
+    @include badge-square;
+}
+
+.badge-rate{
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg-main);
+    border-radius: $border-radius-pills;
+    padding: 8px;
+    i, span{
+        color: var(--secondary-color);
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    i{
+        margin-right: 6px;
+        font-weight: bold;
+    }
+}
+
+.verta-bg-success{
+    background: var(--green-main);
+}
+
+
+
+.badge-status{
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    &.in-stock{
+        background: rgba(63, 165, 107, 0.3);
+        color: var(--green-main);
+    }
+    &.remot-stock{
+        background: rgba(224, 168, 59, 0.3);
+        color: var(--text-accent);
+    }
+    &.out-of-stock{
+        background: rgba(199, 68, 68, 0.3);
+        color: var(--red-main);
+    }
+}
+
+.badge-taste{
+    padding: 4px 8px;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    color: var(--text-accent);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 20px;
+        img{
+            margin-right: 6px;
+            position: relative;
+            top: -1px;
+        } 
+}
+
+.badge-data{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 4px;
+    background: var(--bg-secondary);
+    padding: 4px 8px;
+}

@@ -1,0 +1,145 @@
+// src/assets/scss/custom/components/_timeline.scss
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    list-style: none;
+}
+
+.timeline-basic {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    .timeline-item {
+        position: relative;
+        padding-left: 1.25rem;
+        padding-bottom: 0.75rem;
+
+        &:not(:last-child)::before {
+            content: "";
+            @include position(absolute, 9px, null, -0.5rem, 2.4px);
+            width: 2px;
+            background-color: var(--#{$prefix}tertiary-bg);
+        }
+
+        &::after {
+            content: "";
+            @include position(absolute, 0.5rem, null, null, 0);
+            width: 7px;
+            height: 7px;
+            border-radius: 999px;
+            background-color: var(--#{$prefix}tertiary-bg);
+        }
+
+        &:is(.active) {
+            span {
+                &::before {
+                    content: "";
+                    @include position(absolute, 4px, null, null, -4px);
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 999px;
+                }
+            }
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    &.timeline-square {
+        .timeline-item{
+            &::after {
+                border-radius: 2px;
+            }
+            span {
+                &::before {
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+
+@each $state in map-keys($theme-colors) {
+    .timeline-#{$state} {
+        .timeline-item {
+            &.active {
+                &::after,
+                &::before {
+                    background-color: var(--#{$prefix}#{$state});
+                }
+                span {
+                    &::before {
+                        background-color: rgba(var(--#{$prefix}#{$state}-rgb), 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.changelog-timeline {
+    position: relative;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    .timeline-item {
+        position: relative;
+        padding-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+
+        &::before {
+            content: "";
+            @include position(absolute, 0.5rem, null, -0.5rem, .8rem);
+            width: 0.125rem;
+            margin: 1.875rem 0 1rem 0;
+            background-color: var(--bg-secondary);
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .dot {
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.timeline-modern {
+    list-style: none;
+    .timeline-item {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1.3rem;
+            bottom: -0.5rem;
+            left: 16px;
+            width: 0.0625rem;
+            background-color: var(--#{$prefix}tertiary-bg);
+            z-index: -1;
+        }
+
+        &:last-child {
+            &::before {
+                content: none;
+            }
+        }
+    }
+}

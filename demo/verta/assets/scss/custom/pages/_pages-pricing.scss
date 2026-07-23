@@ -1,0 +1,61 @@
+// src/assets/scss/custom/pages/_pages-pricing.scss
+
+.blur-2xl {
+    filter: blur(40px);
+}
+
+.arrow-gradient {
+    background: linear-gradient(
+        to bottom,
+        rgba(var(--#{$prefix}warning-rgb), 0.2),
+        rgba(var(--#{$prefix}warning-rgb), 0)
+    );
+}
+
+.droplet-gradient {
+    background: linear-gradient(
+        to right,
+        rgba(var(--#{$prefix}secondary-rgb), 0.2),
+        rgba(var(--#{$prefix}secondary-rgb), 0)
+    );
+}
+
+.gem-gradient {
+    background: linear-gradient(to left, rgba(var(--#{$prefix}danger-rgb), 0.2), rgba(var(--#{$prefix}danger-rgb), 0));
+}
+
+.pricing-tag {
+    position: absolute;
+    right: $card-spacer-x;
+    top: $card-spacer-y;
+}
+
+.pricing-card {
+    .avatar {
+        transition: $transition-base;
+        transform: scaleX(100%);
+    }
+    
+    &:hover {        
+        .avatar {
+            transform: scaleX(-100%);
+        }
+    }
+}
+
+.border-gradient-top {
+    position: relative;
+    border: none !important;
+}
+
+.border-gradient-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, var(--#{$prefix}primary), transparent);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}

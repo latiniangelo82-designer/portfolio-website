@@ -1,0 +1,12 @@
+// src/assets/scss/custom/apps/_apps-property-categories.scss
+
+.nav-pills {
+    &.property-type {
+        .nav-link{
+            padding-inline: 35px;
+            &:not(.active){
+                background-color: var(--#{$prefix}secondary-bg);
+            }
+        }
+    }
+}

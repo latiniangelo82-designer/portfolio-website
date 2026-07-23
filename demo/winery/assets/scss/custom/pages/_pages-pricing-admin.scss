@@ -1,0 +1,18 @@
+// src/assets/scss/custom/pages/_pages-pricing-admin.scss
+
+.pricing-widget{
+    overflow: hidden;
+    position: relative;
+
+    .shap-1{
+        position: absolute;
+        top: -245px;
+        left: -120px;
+    }
+    .shap-2{
+        position: absolute;
+        top: -268px;
+        right: -195px;
+    }
+}
+

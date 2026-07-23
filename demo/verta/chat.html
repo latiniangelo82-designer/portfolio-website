@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-style-mode" content="1">
+    <meta name="description" content="Empowering businesses with expert guidance, strategic solutions, and a clear path toward measurable and lasting results.">
+    
+    <title>Verta - Chat</title>
+    
+    <!-- bootstrap -->
+
+     <link rel="stylesheet" href="assets/css/bootstrap.css">
+     <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+     
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+    <link rel="stylesheet" href="assets/css/lucid.css" />
+    
+    
+
+    
+</head>
+<body>
+<header class="main-topbar gap-md-2" id="main-topbar">
+    <div class="navbar-brand">
+        <div class="logos">
+            <a href="#!" aria-label="Topbar Logo">
+                <img src="./assets/images/main-logo.png" loading="lazy" height="30" alt="" class="logo-full">
+                <img src="./assets/images/logo-icon.png" loading="lazy" height="30" alt="" class="logo-icon">
+            </a>
+        </div>
+    </div>
+    <div class="align-items-center d-flex">
+        <button type="button" id="toggleSidebar" class="sidebar-toggle btn p-0" aria-label="sidebar-toggle"><i class="icon-square-chevron-left"></i></button>
+        <div class="position-relative navbar-search d-none d-md-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search icon"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+            <input type="search" class="form-control border-0 shadow-none" placeholder="Search Properties..">
+        </div>
+    </div>
+    <div class="d-flex align-items-center gap-2 gap-md-3 ms-auto">
+        
+        
+        <div class="dropdown">
+            <button class="btn topbar-link" type="button" aria-label="Notification-button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="position-relative">
+                    <i class="icon-bell"></i>
+                    <span class="notification-animate rounded-circle"></span>
+                </span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-0">
+                <div class="d-flex align-items-center gap-2 p-5 pb-0">
+                    <h6 class="flex-grow-1 mb-0">Notification (4)</h6>
+                    <a href="#!" class="link link-custom-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings size-4"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
+                </div>
+                <div class="py-5">
+                    <div class="topbar-notification px-5" style="height: 360px;" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px -20px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px 20px;">
+                        <div class="vstack gap-3">
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded unread">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-2.png" loading="lazy" alt="Profile picture of Donna Berlin" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-primary badge rounded-circle notification top-end"><i class="ri-chat-3-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Donna Berlin</span> wants to edit <span class="text-body fw-medium">Evohus Admin &amp; Dashboard</span></p>
+                                    <p class="fs-12 text-muted">5 min ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-3.png" loading="lazy" alt="Profile picture of Michael Adams" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-success badge rounded-circle notification top-end"><i class="ri-check-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Michael Adams</span> completed task <span class="text-body fw-medium">Create Analytics Report</span></p>
+                                    <p class="fs-12 text-muted">12 min ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="avatar text-danger fs-xl rounded-2 bg-danger-subtle size-9 rounded-circle flex-shrink-0">
+                                    <i class="ri-spam-line"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">System Alert:</span> High CPU usage detected on <span class="text-body fw-medium">Server #3</span></p>
+                                    <p class="fs-12 text-muted">30 min ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-5.png" loading="lazy" alt="Profile picture of Sarah Miller" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-info badge rounded-circle notification top-end"><i class="ri-message-3-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Sarah Miller</span> sent you a new message</p>
+                                    <p class="fs-12 text-muted">1 hr ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="avatar text-warning fs-xl rounded-2 bg-warning-subtle size-9 rounded-circle flex-shrink-0">
+                                    <i class="ri-hourglass-line"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Meeting Reminder:</span> Product Strategy Call at <span class="text-body fw-medium">3:00 PM</span></p>
+                                    <p class="fs-12 text-muted">Today</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-7.png" loading="lazy" alt="Profile picture of Alex Johnson" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-info badge rounded-circle notification top-end"><i class="ri-add-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Alex Johnson</span> joined your project <span class="text-body fw-medium">UI Redesign</span></p>
+                                    <p class="fs-12 text-muted">Yesterday</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none;"></div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown d-none d-md-block">
+            <button class="btn topbar-link" type="button" aria-label="Message-button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="position-relative">
+                    <i class="icon-message-circle-more"></i>
+                </span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-0">
+                <div class="d-flex align-items-center gap-2 p-5 pb-0">
+                    <h6 class="flex-grow-1 mb-0">Messages</h6>
+                    <a href="#!" class="link link-custom-primary small">View All <i class="ri-arrow-right-s-line"></i></a>
+                </div>
+                <div class="topbar-messages p-5">
+                    <div class="vstack gap-5">
+                        <a href="#!" class="d-flex gap-3 py-1 rounded position-relative">
+                            <img src="./assets/images/user-2.png" alt="Emma Brown" class="rounded-circle size-9 flex-shrink-0">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1 fw-medium text-body">Emma Brown</h6>
+                                    <span class="fs-12 text-muted">2 min ago</span>
+                                </div>
+                                <p class="mb-1 fs-14 text-muted">Hi, could you please share details for the 3BHK apartment at Park Avenue?</p>
+                                <span class="badge bg-success-subtle text-success fs-11">New Inquiry</span>
+                            </div>
+                        </a>
+                        <a href="#!" class="d-flex gap-3 py-1 rounded position-relative">
+                            <img src="./assets/images/user-3.png" alt="David Miller" class="rounded-circle size-9 flex-shrink-0">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1 fw-medium text-body">David Miller</h6>
+                                    <span class="fs-12 text-muted">10 min ago</span>
+                                </div>
+                                <p class="mb-1 fs-14 text-muted">I’m interested in the villa you listed last week. Is it still available?</p>
+                                <span class="badge bg-info-subtle text-info fs-11">Follow Up</span>
+                            </div>
+                        </a>
+                        <a href="#!" class="d-flex gap-3 py-1 rounded position-relative">
+                            <img src="./assets/images/user-5.png" alt="Sophia Turner" class="rounded-circle size-9 flex-shrink-0">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1 fw-medium text-body">Sophia Turner</h6>
+                                    <span class="fs-12 text-muted">45 min ago</span>
+                                </div>
+                                <p class="mb-1 fs-14 text-muted">Can we schedule a visit for the Greenview project tomorrow morning?</p>
+                                <span class="badge bg-warning-subtle text-warning fs-11">Appointment</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown profile-dropdown">
+            <button class="btn px-0 d-flex align-items-center text-body" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="en" class="object-fit-cover rounded-3">
+                <span class="text-start ms-3 me-3 d-none d-md-block">
+                    <span class="d-block fw-medium pr-name fs-sm">Kenji Matsuyama</span>
+                    <small class="text-muted pr-desc">Sales Agent</small>
+                </span>
+                <i class="icon-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-md p-4 profile-dropdown-menu">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a class="profile-link" href="pages-user-activity.html"><i class="ri-user-3-line d-inline-block me-2 fs-17"></i> My Profile <span class="text-primary">@Sophia</span></a>
+                    </li>
+                    <li>
+                        <a class="profile-link" href="pages-account-settings.html"><i class="ri-settings-3-line d-inline-block me-2 fs-17"></i> Account Settings</a>
+                    </li>
+                    <li>
+                        <a class="profile-link" href="pages-help-center.html"><i class="ri-customer-service-line d-inline-block me-2 fs-17"></i> Help Center</a>
+                    </li>
+                    <li>
+                        <a class="profile-link pb-0" href="auth-signin-basic.html"><i class="ri-logout-circle-r-line inline-block me-2 fs-17"></i> Log Out</a>
+                    </li>
+                </ul>
+                <div class="mt-2 pt-2 border-top">
+                    <small class="text-uppercase fs-11 fw-medium text-muted">Switch Account</small>
+                    <div class="d-flex flex-wrap flex-column gap-1 radio-primary card-checkbox light-checkbox mt-2">
+                        <label class="form-check-selected active align-items-start form-check px-3 py-2 gap-2 rounded-3">
+                            <span class="text-start flex-grow-1">
+                                <span class="fw-medium fs-sm">Sophia Martinez</span>
+                                <a href="#!" class="text-muted">hey.sophia@evohus.com</a>
+                            </span>
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="flexRadioCard1" checked="">
+                        </label>
+                        <label class="form-check-selected active align-items-start form-check px-3 py-2 gap-2 rounded-3">
+                            <span class="text-start flex-grow-1">
+                                <span class="fw-medium fs-sm">Sophia Martinez</span>
+                                <a href="#!" class="text-muted">sophia.ma@evohus.com</a>
+                            </span>
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="flexRadioCard2">
+                        </label>
+                    </div>
+                    <button class="btn btn-outline-light w-100 mt-2"><i class="ri-logout-circle-r-line inline-block me-2 fs-17"></i> Sign out of all accounts</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="main-sidebar" class="main-sidebar sidebar-sticky">
+    <div class="sidebar-wrapper">
+        <a href="#!" class="navbar-brand">
+            <div class="logo-lg">
+                <img src="./assets/images/main-logo.png" loading="lazy" aria-label="logo" alt="" height="18" class="mx-auto logo-dark">
+                <img src="./assets/images/logo-white.png" loading="lazy" aria-label="logo" alt="" height="18" class="mx-auto logo-light">
+            </div>
+            <div class="logo-sm">
+                <img src="./assets/images/logo-sm.png" loading="lazy" aria-label="logo" alt="" height="22" class="mx-auto logo-dark">
+                <img src="./assets/images/logo-sm.png" loading="lazy" aria-label="logo" alt="" height="22" class="mx-auto logo-light">
+            </div>
+        </a>
+        <div class="dropdown profile-dropdown">
+            <a href="#!" class="btn d-flex align-items-center w-100 gap-2 p-4 text-start" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./assets/images/user-44.png" loading="lazy" alt="" class="size-10 rounded">
+                <div class="flex-grow-1 content">
+                    <h6 class="fw-medium text-truncate mb-0 text-white" data-translate="pe-sophia-martinez">Sophia Martinez</h6>
+                    <p class="fs-14">ID: 150001</p>
+                </div>
+                <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down size-4"><path d="m6 9 6 6 6-6"></path></svg>
+                </div>
+            </a>
+            <div class="dropdown-menu p-4 profile-dropdown-menu">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/images/user-44.png" loading="lazy" alt="" class="rounded-circle size-10 flex-shrink-0">
+                    <div class="flex-grow-1 overflow-hidden">
+                        <h6 class="mb-0 text-truncate">Sophia Martinez</h6>
+                        <p class="mb-0 text-truncate"><a href="#!" class="link link-primary text-dark fw-medium">hey.sophia@evohus.com</a></p>
+                    </div>
+                </div>
+                <div class="pt-2 mt-3 border-top">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a class="profile-link" href="pages-user-activity.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bell-dot" class="lucide lucide-bell-dot d-inline-block me-2 size-4"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M13.916 2.314A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.74 7.327A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673 9 9 0 0 1-.585-.665"></path><circle cx="18" cy="8" r="3"></circle></svg> Profile Activity</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-user-projects.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="presentation" class="lucide lucide-presentation d-inline-block me-2 size-4"><path d="M2 3h20"></path><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path><path d="m7 21 5-5 5 5"></path></svg> Manage Projects</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-account-settings.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings d-inline-block me-2 size-4"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg> Account Settings</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-help-center.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="headset" class="lucide lucide-headset d-inline-block me-2 size-4"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"></path><path d="M21 16v2a4 4 0 0 1-4 4h-5"></path></svg> Help Center</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-pricing.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="gem" class="lucide lucide-gem d-inline-block me-2 size-4"><path d="M6 3h12l4 6-10 13L2 9Z"></path><path d="M11 3 8 9l4 13 4-13-3-6"></path><path d="M2 9h20"></path></svg> Upgrade Plan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-3 mt-2 border-top">
+                    <a class="profile-link pb-0" href="auth-signin-basic.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="log-out" class="lucide lucide-log-out inline-block me-2 size-4"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg> Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-menu px-5 simplebar-scrollable-y" id="navbar-menu-list" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px -20px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px 20px;">
+            <ul class="list-unstyled p-0 navbar-nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="index.html">
+                        <i class="icon-chart-pie"></i>
+                        <span class="content" data-translate="pe-dashboards">Dashboards</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-position="right-top" data-bs-toggle="collapse" href="#collapseProperties" aria-expanded="false">
+                        <i class="icon-building-2"></i>
+                        <span class="content" data-translate="pe-chat">Properties</span>
+                        <i class="icon-chevron-down"></i>
+                    </a>
+                    <div class="collapse" id="collapseProperties">
+                        <ul class="nav-menu-sub">
+                            <li><a href="properties.html" class="nav-link"><span data-translate="pe-default">List Properties</span></a></li>
+                            <li><a href="addproperties.html" class="nav-link"><span data-translate="pe-group">Add Property</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="international-hub.html">
+                        <i class="icon-earth"></i>
+                        <span class="content" data-translate="pe-calendar">International Hub</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed active" href="chat.html">
+                        <i class="icon-message-circle-more"></i>
+                        <span class="content" data-translate="pe-email">Chat</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="schedule.html">
+                        <i class="icon-clock"></i>
+                        <span class="content" data-translate="pe-review">Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-position="right-top" data-bs-toggle="collapse" href="#collapseeCommerce" aria-expanded="false">
+                        <i class="icon-users-round"></i>
+                        <span class="content" data-translate="pe-property">List Agents</span>
+                        <i class="icon-chevron-down"></i>
+                    </a>
+                    <div class="collapse" id="collapseeCommerce">
+                        <ul class="nav-menu-sub">
+                            <li><a href="list-agent.html" class="nav-link"><span data-translate="pe-list-view">Agents View</span></a></li>
+                            <li><a href="add-agent.html" class="nav-link"><span data-translate="pe-grid-view">Add Agent</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div></div></div></div><div class="simplebar-placeholder" style="width: 248px; height: 1868px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 27px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+    </div>
+</div>
+<div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+<div class="min-vh-100 position-relative">
+        <div class="page-wrapper">
+<div class="container-fluid">
+
+    <div class="gap-2 page-heading mb-3 flex-column flex-md-row">
+        <h6 class="flex-grow-1 mb-0">Default Chat</h6>
+        <ul class="breadcrumb flex-shrink-0 mb-0">
+            <li class="breadcrumb-item"><a href="#!"><i class="icon-house"></i></a></li>
+            <li class="breadcrumb-item active">Default Chat</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xxl-3">
+            <div class="card card-h-100 chat-list">
+                <div class="card-body">
+                    <div class="d-flex gap-2">
+                        <div class="position-relative flex-grow-1 mb-5">
+                            <input type="text" id="chatSearch" class="form-override form-control ps-9 pe-4" placeholder="Search for ...">
+                            <div class="position-absolute top-50 translate-middle-y d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search size-4 ms-3 text-muted"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-list-height mx-n5 px-5 pt-2 simplebar-scrollable-y simplebar-mouse-entered" data-simplebar="init"><div class="simplebar-wrapper" style="margin: -8px -20px 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 8px 20px 0px;">
+                        <ul class="px-0 d-flex flex-column gap-3 list-unstyled" id="chatList">
+                            <li>
+                                <a href="#!" class="chat-list-item active">
+                                    <div class="position-relative size-10 bg-light flex-shrink-0 rounded-circle">
+                                        <img src="./assets/images/thumb/thumb-property-1.png" alt="User 13" class="img-fluid rounded-circle">
+                                        <span class="status-indicator bg-success rounded-circle size-2-5"></span>
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h6 class="mb-0">Luxury Bungalow Villas</h6>
+                                        <p class="fs-sm text-muted text-truncate">Good morning Sato, ok thank you so much for contacting me, I received the notification</p>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <span class="badge verta-bg-success" style="display: none;">2</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="chat-list-item">
+                                    <div class="position-relative size-10 bg-light flex-shrink-0 rounded-circle">
+                                        <img src="./assets/images/thumb/thumb-property-2.png" alt="User 11" class="img-fluid rounded-circle">
+                                        <span class="status-indicator bg-success rounded-circle size-2-5"></span>
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h6 class="mb-0">Duplex Bungalow</h6>
+                                        <p class="fs-sm text-muted text-truncate">Here are some of very cute illustration.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="chat-list-item">
+                                    <div class="position-relative size-10 bg-light flex-shrink-0 rounded-circle">
+                                        <img src="./assets/images/thumb/thumb-property-3.png" alt="User 18" class="img-fluid rounded-circle">
+                                        <span class="status-indicator bg-success rounded-circle size-2-5"></span>
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h6 class="mb-0">Zenith Horizon Estate</h6>
+                                        <p class="fs-sm unread text-muted text-truncate">Use tools like Trello, Asana, or Jira for task management and progress tracking.</p>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <span class="badge verta-bg-success">2</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!" class="chat-list-item">
+                                    <div class="position-relative size-10 bg-light flex-shrink-0 rounded-circle">
+                                        <img src="./assets/images/thumb/thumb-property-4.png" alt="User 20" class="img-fluid rounded-circle">
+                                        <span class="status-indicator bg-success rounded-circle size-2-5"></span>
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h6 class="mb-0">Emerald Bay Residences</h6>
+                                        <p class="fs-sm unread text-muted text-truncate">Regularly review and improve communication practices based on team feedback and project needs.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="noResult" class="text-center d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" class="mx-auto size-12" viewBox="0 0 48 48">
+                                <linearGradient id="SVGID_1__h35ynqzIJzH4_gr1" x1="34.598" x2="15.982" y1="15.982" y2="34.598" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#60e8fe"></stop>
+                                    <stop offset=".033" stop-color="#6ae9fe"></stop>
+                                    <stop offset=".197" stop-color="#97f0fe"></stop>
+                                    <stop offset=".362" stop-color="#bdf5ff"></stop>
+                                    <stop offset=".525" stop-color="#dafaff"></stop>
+                                    <stop offset=".687" stop-color="#eefdff"></stop>
+                                    <stop offset=".846" stop-color="#fbfeff"></stop>
+                                    <stop offset="1" stop-color="#fff"></stop>
+                                </linearGradient>
+                                <path fill="url(#SVGID_1__h35ynqzIJzH4_gr1)" d="M40.036,33.826L31.68,25.6c0.847-1.739,1.335-3.684,1.335-5.748c0-7.27-5.894-13.164-13.164-13.164 S6.688,12.582,6.688,19.852c0,7.27,5.894,13.164,13.164,13.164c2.056,0,3.995-0.485,5.728-1.326l3.914,4.015l4.331,4.331 c1.715,1.715,4.496,1.715,6.211,0C41.751,38.321,41.751,35.541,40.036,33.826z"></path>
+                                <path fill="none" stroke="#10cfe3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M31.95,25.739l8.086,8.086c1.715,1.715,1.715,4.496,0,6.211l0,0c-1.715,1.715-4.496,1.715-6.211,0 l-4.331-4.331"></path>
+                                <path fill="none" stroke="#10cfe3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M7.525,24.511c-1.771-4.694-0.767-10.196,3.011-13.975c3.847-3.847,9.48-4.817,14.228-2.912"></path>
+                                <path fill="none" stroke="#10cfe3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M30.856,12.603c3.376,5.114,2.814,12.063-1.688,16.565c-4.858,4.858-12.565,5.129-17.741,0.814"></path>
+                            </svg>
+                            <p class="mt-2 text-center text-muted">No matching records found</p>
+                        </div>
+                    </div></div></div></div><div class="simplebar-placeholder" style="width: 1055px; height: 703px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 157px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+                </div>
+            </div>
+        </div><!-- end col -->
+        <div class="col-md-8">
+            <div class="card overflow-hidden meassages card-h-100">
+                <div class="card-body py-0 h-100">
+                    <div class="mx-n5 chat-height simplebar-scrollable-y" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px; margin-left: 3px; margin-right: 3px;">
+                        <div class="pt-0 card-body border-bottom position-sticky top-0 chat-toolbar" style="padding: 0 !important; ">
+                            
+                            <div class="d-flex align-items-center justify-content-center w-100 ps-4 pe-4 pb-4 border-bottom">
+                                <div class="size-10 flex-shrink-0 rounded-circle bg-light avatar">
+                                    <img src="assets/images/thumb/thumb-property-1.png" alt="" class="img-fluid rounded-circle" style="display: block;">
+                                </div>
+                                <div class="flex-grow-1 overflow-hidden ms-3">
+                                    <h6 class="mb-1 lh-sm">
+                                        <a href="#!" class="text-body">Luxury Bungalow Villas</a>
+                                    </h6>
+                                    <p class="text-muted text-truncate">Me, Sato Tsubasa</p>
+                                </div>
+                                <button class="btn-full-round btn btn-active-dark btn-icon" data-bs-toggle="" data-bs-target=""><i class="icon-ellipsis-vertical"></i></button>
+                            </div>
+
+                            <div class="chat-tab-content d-flex">
+                                <div class="chat-tab-btn tab-active d-flex p-4 align-items-center">
+                                    <i class="icon-message-circle-more text-muted mb-2"></i>
+                                    <span class="text-muted">Messages</span>
+                                </div>
+                                <div class="chat-tab-btn d-flex p-4 align-items-center">
+                                    <i class="icon-folder-check text-disable mb-2"></i>
+                                    <span class="text-disable">Documents</span>
+                                </div>
+                                <div class="chat-tab-btn d-flex p-4 align-items-center">
+                                    <i class="icon-image text-disable mb-2"></i>
+                                    <span class="text-disable">Photos</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-5" id="chat-messages">
+                
+
+                
+              
+                <div id="msg-2" class="d-flex align-items-end gap-2 ms-auto max-w-xl">
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-end gap-2">
+                      <div class="dropdown mb-7">
+                        <button class="btn btn-link text-muted p-0" type="button" data-bs-toggle="dropdown" aria-expanded="true" title="dropdown-button">
+                          <i class="ri-more-2-fill text-muted"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <li>
+                            <a href="#!" class="dropdown-item">
+                              <i class="ri-reply-line me-1"></i>
+                              <span>Reply</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#!" class="dropdown-item delete-message" data-id="msg-1">
+                              <i class="ri-delete-bin-line me-1"></i>
+                              <span>Delete</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="flex-grow-1">
+                      <div class="px-4 py-3 bg-light-subtle text-body rounded-top-4 rounded-start-4">Good morning Sato, I received an offer from one of my clients for this property.</div>
+                      <p class="text-muted mt-2 fs-12 text-end chat-user">Today, 09:56 AM<i class="ri-check-double-fill text-success fs-17 ms-1"></i><i class="if-read icon-check-check"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="position-relative size-8 flex-shrink-0 d-flex justify-content-center align-items-center">
+                    <img src="assets/images/thumb/kenji.png" alt="" class="img-fluid rounded-circle">
+                    <span class="status-indicator position-absolute bottom-0 end-0 bg-success border border-2 border-light-subtle rounded-circle size-2-5"></span>
+                  </div>
+                </div>
+
+                <div id="msg-2" class="d-flex align-items-end gap-2 ms-auto max-w-xl">
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-end gap-2">
+                      <div class="dropdown mb-7">
+                        <button class="btn btn-link text-muted p-0" type="button" data-bs-toggle="dropdown" aria-expanded="true" title="dropdown-button">
+                          <i class="ri-more-2-fill text-muted"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <li>
+                            <a href="#!" class="dropdown-item">
+                              <i class="ri-reply-line me-1"></i>
+                              <span>Reply</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#!" class="dropdown-item delete-message" data-id="msg-1">
+                              <i class="ri-delete-bin-line me-1"></i>
+                              <span>Delete</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="flex-grow-1">
+                      <div class="px-4 py-3 bg-light-subtle text-body rounded-top-4 rounded-start-4">I have already placed an offer that matches one already in place, but my client is very motivated to close quickly.</div>
+                      <p class="text-muted mt-2 fs-12 text-end chat-user">Today, 09:58 AM<i class="ri-check-double-fill text-success fs-17 ms-1"></i><i class="if-read icon-check-check"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="position-relative size-8 flex-shrink-0 d-flex justify-content-center align-items-center">
+                    <img src="assets/images/thumb/kenji.png" alt="" class="img-fluid rounded-circle">
+                    <span class="status-indicator position-absolute bottom-0 end-0 bg-success border border-2 border-light-subtle rounded-circle size-2-5"></span>
+                  </div>
+                </div>
+
+
+              <div id="msg-0" class="d-flex align-items-end gap-2 max-w-xl">
+                  <div class="position-relative size-8 flex-shrink-0 bg-light rounded-circle d-flex justify-content-center align-items-center">
+                    <img src="assets/images/thumb/sato.png" alt="" class="img-fluid rounded-circle">
+                    <span class="status-indicator position-absolute bottom-0 end-0 bg-success border border-2 border-light-subtle rounded-circle size-2-5"></span>
+                  </div>
+                  <div class="flex-grow-1">
+                    
+                    <div class="d-flex align-items-end gap-2 ">
+                      <div class="flex-grow-1">
+                      <div class="px-4 py-3 bg-light-subtle text-body rounded-top-4 rounded-end-4">
+                      Good morning Kenji, ok thank you so much for contacting me, I received the notification of the new offer, I will communicate it to my client immediately
+                      </div>
+                      <p class="text-muted mt-2 fs-12">Today, 10:00 AM</p>
+                      </div>
+                      <div class="dropdown mb-7">
+                        <button class="btn btn-link text-muted p-0" type="button" data-bs-toggle="dropdown" aria-expanded="true" title="dropdown-button">
+                          <i class="ri-more-2-fill text-muted"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <li>
+                            <a href="#!" class="dropdown-item">
+                              <i class="ri-reply-line me-1"></i>
+                              <span>Reply</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#!" class="dropdown-item delete-message" data-id="msg-0">
+                                <i class="ri-delete-bin-line me-1"></i>
+                                <span>Delete</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+              
+                
+              </div>
+                        </div>
+                    </div></div></div></div><div class="simplebar-placeholder" style="width: 1055px; height: 927px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 112px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+                </div>
+                <div class="card-body type-content">
+                    <div class="d-flex align-items-center gap-2 rounded-3" id="messageForm">
+                        <input type="text" class="form-control border-0 flex-grow-1" placeholder="Type something ...">
+
+                        
+                        <button class="btn btn-active-dark text-muted btn-icon flex-shrink-0"><i class="icon-paperclip"></i></button>
+                        <button class="btn btn-chat-active btn-icon flex-shrink-0"><i class="icon-send"></i></button>
+                        
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add New Chat Modal -->
+    <div class="modal fade" id="addNewChatModals" tabindex="-1" aria-labelledby="addNewChatModalsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="mb-0">Add New Chat</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="position-relative mb-4">
+                        <input type="text" class="form-control ps-9 pe-4" placeholder="Search for ...">
+                        <div class="position-absolute top-50 translate-middle-y d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search size-4 ms-3 text-muted"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                        </div>
+                    </div>
+                    <div class="max-h-72 mt-4 px-5 mx-n5" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px -20px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px 20px;">
+                        <ul class="py-0 d-flex flex-column gap-4 list-unstyled">
+                            <li class="mt-4">
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-5.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="mb-0 flex-grow-1">Auli Ahokas</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-6.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Sirpa Kolkka</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-37.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Risto Saraste</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-36.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Leena Laine</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-9.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Mikko Virtanen</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-29.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Tuula Nieminen</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-31.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Jari Mäkinen</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-12.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Heidi Kinnunen</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-21.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Pekka Heikkinen</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex align-items-center gap-2 chatList-hover active">
+                                    <div class="position-relative size-6 flex-shrink-0 rounded-circle bg-white">
+                                        <img src="./assets/images/user-14.png" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <h6 class="flex-grow-1 mb-0">Kati Laakso</h6>
+                                    <a href="#!" class="btn btn-xs btn-light text-muted flex-shrink-0">Send <i class="ri-send-plane-2-line align-middle ms-1"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none;"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call Modal -->
+    <div class="modal fade" id="callModal" aria-hidden="true" aria-labelledby="callModal" tabindex="-1">
+        <div class="modal-dialog modal-xs position-absolute end-0 bottom-0 m-5">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="flex-shrink-0 size-10" id="callAvatar">
+                            <img src="./assets/images/user-13.png" alt="" class="rounded-circle img-fluid">
+                        </div>
+                        <div>
+                            <h6 class="mb-0">Dawn Teague</h6>
+                            <p class="fs-sm text-muted">Calling...</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 mt-4">
+                        <div>
+                            <button type="button" class="btn btn-active-dark btn-icon text-muted toggle-mic">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mic-off" class="lucide lucide-mic-off size-5 mic-off-icon"><line x1="2" x2="22" y1="2" y2="22"></line><path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2"></path><path d="M5 10v2a7 7 0 0 0 12 5"></path><path d="M15 9.34V5a3 3 0 0 0-5.68-1.33"></path><path d="M9 9v3a3 3 0 0 0 5.12 2.12"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mic" class="lucide lucide-mic size-5 mic-on-icon d-none"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>
+                            </button>
+                        </div>
+
+                        <button type="button" class="btn btn-active-dark btn-icon text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pause" class="lucide lucide-pause size-5"><rect x="14" y="4" width="4" height="16" rx="1"></rect><rect x="6" y="4" width="4" height="16" rx="1"></rect></svg></button>
+                        <button type="button" class="btn btn-active-dark btn-icon text-muted"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="disc" class="lucide lucide-disc size-5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="2"></circle></svg></button>
+                        <button type="button" class="btn btn-active-danger btn-icon text-danger border-0" data-bs-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone" class="lucide lucide-phone size-5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></button>
+                        <button type="button" class="btn btn-active-dark btn-icon text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings size-5"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Call Modal -->
+    <div class="modal fade" id="videoCallModal" tabindex="-1" aria-labelledby="videoCallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="position-relative">
+                        <img src="./assets/images/video-1.png" alt="" class="img-fluid">
+                        <a href="#!" class="position-absolute bottom-0 end-0 mb-5 me-5">
+                            <img src="./assets/images/video-2.png" alt="" class="h-24 rounded-2">
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center gap-2 pt-5">
+                        <button class="btn btn-sub-light text-muted btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mic-off" class="lucide lucide-mic-off size-5"><line x1="2" x2="22" y1="2" y2="22"></line><path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2"></path><path d="M5 10v2a7 7 0 0 0 12 5"></path><path d="M15 9.34V5a3 3 0 0 0-5.68-1.33"></path><path d="M9 9v3a3 3 0 0 0 5.12 2.12"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg></button>
+                        <button class="btn btn-danger btn-icon" data-bs-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone-missed" class="lucide lucide-phone-missed size-5"><line x1="22" x2="16" y1="2" y2="8"></line><line x1="16" x2="22" y1="2" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></button>
+                        <button class="btn btn-sub-light text-muted btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="video-off" class="lucide lucide-video-off size-5"><path d="M10.66 6H14a2 2 0 0 1 2 2v2.5l5.248-3.062A.5.5 0 0 1 22 7.87v8.196"></path><path d="M16 16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2"></path><path d="m2 2 20 20"></path></svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="w-100">
+            <div class="row align-items-center">
+                <div class="col-lg-6 d-none d-lg-block">
+                    
+                </div>
+                <div class="col-lg-6 text-muted text-center text-lg-end">
+                    <div>
+                        © <span id="currentYearFooter">2026</span> Verta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</div>
+</div>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+    
+</body>
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-style-mode" content="1">
+    <meta name="description" content="Empowering businesses with expert guidance, strategic solutions, and a clear path toward measurable and lasting results.">
+    
+    <title>Verta - List Agent</title>
+    
+    <!-- bootstrap -->
+
+     <link rel="stylesheet" href="assets/css/bootstrap.css">
+     <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+     
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css" />
+    <link rel="stylesheet" href="assets/css/lucid.css" />
+    
+    
+
+    
+</head>
+<body>
+<header class="main-topbar gap-md-2" id="main-topbar">
+    <div class="navbar-brand">
+        <div class="logos">
+            <a href="#!" aria-label="Topbar Logo">
+                <img src="./assets/images/main-logo.png" loading="lazy" height="30" alt="" class="logo-full">
+                <img src="./assets/images/logo-icon.png" loading="lazy" height="30" alt="" class="logo-icon">
+            </a>
+        </div>
+    </div>
+    <div class="align-items-center d-flex">
+        <button type="button" id="toggleSidebar" class="sidebar-toggle btn p-0" aria-label="sidebar-toggle"><i class="icon-square-chevron-left"></i></button>
+        <div class="position-relative navbar-search d-none d-md-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search icon"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+            <input type="search" class="form-control border-0 shadow-none" placeholder="Search Properties..">
+        </div>
+    </div>
+    <div class="d-flex align-items-center gap-2 gap-md-3 ms-auto">
+        
+        
+        <div class="dropdown">
+            <button class="btn topbar-link" type="button" aria-label="Notification-button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="position-relative">
+                    <i class="icon-bell"></i>
+                    <span class="notification-animate rounded-circle"></span>
+                </span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-0">
+                <div class="d-flex align-items-center gap-2 p-5 pb-0">
+                    <h6 class="flex-grow-1 mb-0">Notification (4)</h6>
+                    <a href="#!" class="link link-custom-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings size-4"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
+                </div>
+                <div class="py-5">
+                    <div class="topbar-notification px-5" style="height: 360px;" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px -20px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 0px 20px;">
+                        <div class="vstack gap-3">
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded unread">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-2.png" loading="lazy" alt="Profile picture of Donna Berlin" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-primary badge rounded-circle notification top-end"><i class="ri-chat-3-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Donna Berlin</span> wants to edit <span class="text-body fw-medium">Evohus Admin &amp; Dashboard</span></p>
+                                    <p class="fs-12 text-muted">5 min ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-3.png" loading="lazy" alt="Profile picture of Michael Adams" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-success badge rounded-circle notification top-end"><i class="ri-check-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Michael Adams</span> completed task <span class="text-body fw-medium">Create Analytics Report</span></p>
+                                    <p class="fs-12 text-muted">12 min ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="avatar text-danger fs-xl rounded-2 bg-danger-subtle size-9 rounded-circle flex-shrink-0">
+                                    <i class="ri-spam-line"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">System Alert:</span> High CPU usage detected on <span class="text-body fw-medium">Server #3</span></p>
+                                    <p class="fs-12 text-muted">30 min ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-5.png" loading="lazy" alt="Profile picture of Sarah Miller" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-info badge rounded-circle notification top-end"><i class="ri-message-3-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Sarah Miller</span> sent you a new message</p>
+                                    <p class="fs-12 text-muted">1 hr ago</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="avatar text-warning fs-xl rounded-2 bg-warning-subtle size-9 rounded-circle flex-shrink-0">
+                                    <i class="ri-hourglass-line"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Meeting Reminder:</span> Product Strategy Call at <span class="text-body fw-medium">3:00 PM</span></p>
+                                    <p class="fs-12 text-muted">Today</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="notification-item position-relative d-flex gap-3 p-3 rounded">
+                                <div class="position-relative">
+                                    <img src="./assets/images/user-7.png" loading="lazy" alt="Profile picture of Alex Johnson" class="rounded-circle size-9 flex-shrink-0">
+                                    <span class="bg-info badge rounded-circle notification top-end"><i class="ri-add-line"></i></span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1 fs-14 text-muted"><span class="text-body fw-medium">Alex Johnson</span> joined your project <span class="text-body fw-medium">UI Redesign</span></p>
+                                    <p class="fs-12 text-muted">Yesterday</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div></div></div></div><div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none;"></div></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown d-none d-md-block">
+            <button class="btn topbar-link" type="button" aria-label="Message-button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="position-relative">
+                    <i class="icon-message-circle-more"></i>
+                </span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg p-0">
+                <div class="d-flex align-items-center gap-2 p-5 pb-0">
+                    <h6 class="flex-grow-1 mb-0">Messages</h6>
+                    <a href="#!" class="link link-custom-primary small">View All <i class="ri-arrow-right-s-line"></i></a>
+                </div>
+                <div class="topbar-messages p-5">
+                    <div class="vstack gap-5">
+                        <a href="#!" class="d-flex gap-3 py-1 rounded position-relative">
+                            <img src="./assets/images/user-2.png" alt="Emma Brown" class="rounded-circle size-9 flex-shrink-0">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1 fw-medium text-body">Emma Brown</h6>
+                                    <span class="fs-12 text-muted">2 min ago</span>
+                                </div>
+                                <p class="mb-1 fs-14 text-muted">Hi, could you please share details for the 3BHK apartment at Park Avenue?</p>
+                                <span class="badge bg-success-subtle text-success fs-11">New Inquiry</span>
+                            </div>
+                        </a>
+                        <a href="#!" class="d-flex gap-3 py-1 rounded position-relative">
+                            <img src="./assets/images/user-3.png" alt="David Miller" class="rounded-circle size-9 flex-shrink-0">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1 fw-medium text-body">David Miller</h6>
+                                    <span class="fs-12 text-muted">10 min ago</span>
+                                </div>
+                                <p class="mb-1 fs-14 text-muted">I’m interested in the villa you listed last week. Is it still available?</p>
+                                <span class="badge bg-info-subtle text-info fs-11">Follow Up</span>
+                            </div>
+                        </a>
+                        <a href="#!" class="d-flex gap-3 py-1 rounded position-relative">
+                            <img src="./assets/images/user-5.png" alt="Sophia Turner" class="rounded-circle size-9 flex-shrink-0">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="mb-1 fw-medium text-body">Sophia Turner</h6>
+                                    <span class="fs-12 text-muted">45 min ago</span>
+                                </div>
+                                <p class="mb-1 fs-14 text-muted">Can we schedule a visit for the Greenview project tomorrow morning?</p>
+                                <span class="badge bg-warning-subtle text-warning fs-11">Appointment</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown profile-dropdown">
+            <button class="btn px-0 d-flex align-items-center text-body" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="en" class="object-fit-cover rounded-3">
+                <span class="text-start ms-3 me-3 d-none d-md-block">
+                    <span class="d-block fw-medium pr-name fs-sm">Kenji Matsuyama</span>
+                    <small class="text-muted pr-desc">Sales Agent</small>
+                </span>
+                <i class="icon-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-md p-4 profile-dropdown-menu">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a class="profile-link" href="pages-user-activity.html"><i class="ri-user-3-line d-inline-block me-2 fs-17"></i> My Profile <span class="text-primary">@Sophia</span></a>
+                    </li>
+                    <li>
+                        <a class="profile-link" href="pages-account-settings.html"><i class="ri-settings-3-line d-inline-block me-2 fs-17"></i> Account Settings</a>
+                    </li>
+                    <li>
+                        <a class="profile-link" href="pages-help-center.html"><i class="ri-customer-service-line d-inline-block me-2 fs-17"></i> Help Center</a>
+                    </li>
+                    <li>
+                        <a class="profile-link pb-0" href="auth-signin-basic.html"><i class="ri-logout-circle-r-line inline-block me-2 fs-17"></i> Log Out</a>
+                    </li>
+                </ul>
+                <div class="mt-2 pt-2 border-top">
+                    <small class="text-uppercase fs-11 fw-medium text-muted">Switch Account</small>
+                    <div class="d-flex flex-wrap flex-column gap-1 radio-primary card-checkbox light-checkbox mt-2">
+                        <label class="form-check-selected active align-items-start form-check px-3 py-2 gap-2 rounded-3">
+                            <span class="text-start flex-grow-1">
+                                <span class="fw-medium fs-sm">Sophia Martinez</span>
+                                <a href="#!" class="text-muted">hey.sophia@evohus.com</a>
+                            </span>
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="flexRadioCard1" checked="">
+                        </label>
+                        <label class="form-check-selected active align-items-start form-check px-3 py-2 gap-2 rounded-3">
+                            <span class="text-start flex-grow-1">
+                                <span class="fw-medium fs-sm">Sophia Martinez</span>
+                                <a href="#!" class="text-muted">sophia.ma@evohus.com</a>
+                            </span>
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="flexRadioCard2">
+                        </label>
+                    </div>
+                    <button class="btn btn-outline-light w-100 mt-2"><i class="ri-logout-circle-r-line inline-block me-2 fs-17"></i> Sign out of all accounts</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="main-sidebar" class="main-sidebar sidebar-sticky">
+    <div class="sidebar-wrapper">
+        <a href="#!" class="navbar-brand">
+            <div class="logo-lg">
+                <img src="./assets/images/main-logo.png" loading="lazy" aria-label="logo" alt="" height="18" class="mx-auto logo-dark">
+                <img src="./assets/images/logo-white.png" loading="lazy" aria-label="logo" alt="" height="18" class="mx-auto logo-light">
+            </div>
+            <div class="logo-sm">
+                <img src="./assets/images/logo-sm.png" loading="lazy" aria-label="logo" alt="" height="22" class="mx-auto logo-dark">
+                <img src="./assets/images/logo-sm.png" loading="lazy" aria-label="logo" alt="" height="22" class="mx-auto logo-light">
+            </div>
+        </a>
+        <div class="dropdown profile-dropdown">
+            <a href="#!" class="btn d-flex align-items-center w-100 gap-2 p-4 text-start" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./assets/images/user-44.png" loading="lazy" alt="" class="size-10 rounded">
+                <div class="flex-grow-1 content">
+                    <h6 class="fw-medium text-truncate mb-0 text-white" data-translate="pe-sophia-martinez">Sophia Martinez</h6>
+                    <p class="fs-14">ID: 150001</p>
+                </div>
+                <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down size-4"><path d="m6 9 6 6 6-6"></path></svg>
+                </div>
+            </a>
+            <div class="dropdown-menu p-4 profile-dropdown-menu">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/images/user-44.png" loading="lazy" alt="" class="rounded-circle size-10 flex-shrink-0">
+                    <div class="flex-grow-1 overflow-hidden">
+                        <h6 class="mb-0 text-truncate">Sophia Martinez</h6>
+                        <p class="mb-0 text-truncate"><a href="#!" class="link link-primary text-dark fw-medium">hey.sophia@evohus.com</a></p>
+                    </div>
+                </div>
+                <div class="pt-2 mt-3 border-top">
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a class="profile-link" href="pages-user-activity.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bell-dot" class="lucide lucide-bell-dot d-inline-block me-2 size-4"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M13.916 2.314A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.74 7.327A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673 9 9 0 0 1-.585-.665"></path><circle cx="18" cy="8" r="3"></circle></svg> Profile Activity</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-user-projects.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="presentation" class="lucide lucide-presentation d-inline-block me-2 size-4"><path d="M2 3h20"></path><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path><path d="m7 21 5-5 5 5"></path></svg> Manage Projects</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-account-settings.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings d-inline-block me-2 size-4"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg> Account Settings</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-help-center.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="headset" class="lucide lucide-headset d-inline-block me-2 size-4"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"></path><path d="M21 16v2a4 4 0 0 1-4 4h-5"></path></svg> Help Center</a>
+                        </li>
+                        <li>
+                            <a class="profile-link" href="pages-pricing.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="gem" class="lucide lucide-gem d-inline-block me-2 size-4"><path d="M6 3h12l4 6-10 13L2 9Z"></path><path d="M11 3 8 9l4 13 4-13-3-6"></path><path d="M2 9h20"></path></svg> Upgrade Plan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pt-3 mt-2 border-top">
+                    <a class="profile-link pb-0" href="auth-signin-basic.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="log-out" class="lucide lucide-log-out inline-block me-2 size-4"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg> Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-menu px-5 simplebar-scrollable-y" id="navbar-menu-list" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px -20px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px 20px;">
+            <ul class="list-unstyled p-0 navbar-nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="index.html">
+                        <i class="icon-chart-pie"></i>
+                        <span class="content" data-translate="pe-dashboards">Dashboards</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-position="right-top" data-bs-toggle="collapse" href="#collapseProperties" aria-expanded="false">
+                        <i class="icon-building-2"></i>
+                        <span class="content" data-translate="pe-chat">Properties</span>
+                        <i class="icon-chevron-down"></i>
+                    </a>
+                    <div class="collapse" id="collapseProperties">
+                        <ul class="nav-menu-sub">
+                            <li><a href="properties.html" class="nav-link"><span data-translate="pe-default">List Properties</span></a></li>
+                            <li><a href="addproperties.html" class="nav-link"><span data-translate="pe-group">Add Property</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="international-hub.html">
+                        <i class="icon-earth"></i>
+                        <span class="content" data-translate="pe-calendar">International Hub</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="chat.html">
+                        <i class="icon-message-circle-more"></i>
+                        <span class="content" data-translate="pe-email">Chat</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="schedule.html">
+                        <i class="icon-clock"></i>
+                        <span class="content" data-translate="pe-review">Schedule</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed active" data-position="right-top" data-bs-toggle="collapse" href="#collapseeCommerce" aria-expanded="false">
+                        <i class="icon-users-round"></i>
+                        <span class="content" data-translate="pe-property">List Agents</span>
+                        <i class="icon-chevron-down"></i>
+                    </a>
+                    <div class="collapse" id="collapseeCommerce">
+                        <ul class="nav-menu-sub">
+                            <li><a href="list-agent.html" class="nav-link"><span data-translate="pe-list-view">Agents View</span></a></li>
+                            <li><a href="add-agent.html" class="nav-link"><span data-translate="pe-grid-view">Add Agent</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div></div></div></div><div class="simplebar-placeholder" style="width: 248px; height: 1868px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 27px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
+    </div>
+</div>
+<div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+<div class="min-vh-100 position-relative">
+        <div class="page-wrapper">
+<div class="container-fluid">
+    <div class="gap-2 page-heading mb-3 flex-column flex-md-row">
+        <h6 class="flex-grow-1 mb-0">List View</h6>
+        <ul class="breadcrumb flex-shrink-0 mb-0">
+            <li class="breadcrumb-item"><a href="#!">List Agents</a></li>
+            <li class="breadcrumb-item active">List View</li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card card-agents">
+                <div class="card-header">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-3">
+                            <label for="searchProjectsInput" class="form-label d-none">Search</label>
+                            <div class="position-relative">
+                                <input type="text" id="chatSearch" class="form-override form-control ps-9 pe-4" placeholder="Search for Agent...">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="search" class="lucide lucide-search size-4 text-muted position-absolute top-50 start-0 ms-3 translate-middle-y"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9 d-flex flex-wrap justify-content-md-end gap-2">
+                            <button class="btn btn-danger btn-icon d-none trash-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trash" class="lucide lucide-trash size-4"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path></svg>
+                            </button>
+
+                                <div class="btn-filter">
+                                    <i class="icon-settings-2 text-muted"></i>
+                                    <span>Filter</span>
+                                </div>
+                            <a href="#" class="btn-main btn-icon"><i class="icon-plus"></i>Add Agent</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-card table-responsive">
+            <table class="table align-middle table-borderless text-nowrap mb-0">
+                <thead class="border-bottom">
+                    <tr>
+                        <th class="fw-medium text-muted pt-0" data-sort="email" style="cursor: pointer;">Agent </th>
+                        <th class="fw-medium text-muted pt-0" data-sort="phone" style="cursor: pointer;">Location </th>
+                        <th class="fw-medium text-muted pt-0" data-sort="status" style="cursor: pointer;">Email </th>
+                        <th class="fw-medium text-muted pt-0" data-sort="listings" style="cursor: pointer;">Phone Number </th>
+                        <th class="fw-medium text-muted pt-0">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="projectsTableBody" class="table-agents">
+                    
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="d-flex gap-2 align-items-center">
+                            
+                                <img src="assets/images/thumb/kenji.png" loading="lazy" alt="" class="size-8 rounded-circle">
+                            
+                            <a href="#!" class="text-reset fw-medium">Kenki Matsuyama <br /><span class="text-muted fs-12">Sales Agent</span></a>
+                        </div>
+                    </td>
+                    <td>Saitama (Omiya)</td>
+                    <td><a href="#!" class="link link-custom">kenji.matsuyama@verta.com</a></td>
+                    <td>+(256) 111 222 3333</td>
+                    
+                    <td>
+                        <div class="btn-icon-only">
+                            <i class="icon-message-circle-more text-muted"></i>
+                        </div>
+                    </td>
+                </tr>
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                </tbody>
+            </table>
+        </div><div>
+            <div class="row align-items-center g-3 mt-2">
+                <div class="col-md-6">
+                    <p class="text-muted text-center text-md-start mb-0">
+                        Showing <b class="me-1">1-10</b>
+                        of <b class="ms-1">20</b> Results
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center justify-content-md-end mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#!" data-page="0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-left" class="lucide lucide-chevron-left size-4"><path d="m15 18-6-6 6-6"></path></svg> Previous
+                                </a>
+                            </li>
+        
+                <li class="page-item active">
+                    <a class="page-link" href="#!" data-page="1">1</a>
+                </li>
+            
+                <li class="page-item ">
+                    <a class="page-link" href="#!" data-page="2">2</a>
+                </li>
+            
+                            <li class="page-item ">
+                                <a class="page-link" href="#!" data-page="2">
+                                    Next <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-right" class="lucide lucide-chevron-right size-4"><path d="m9 18 6-6-6-6"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+                </div>
+            </div>
+            <!-- Add Project Modal -->
+            <div class="modal fade" id="addAgencyModal" tabindex="-1" aria-labelledby="addAgencyModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title" id="addAgencyModalLabel">Add Agency</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#!">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <label for="agencyNameInput" class="form-label">Agency Name</label>
+                                        <input type="text" class="form-control" id="agencyNameInput" placeholder="Agency Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="locationInput" class="form-label">Location</label>
+                                        <input type="text" class="form-control" id="locationInput" placeholder="Enter Location">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ownerInput" class="form-label">Owner</label>
+                                        <input type="text" class="form-control" id="ownerInput" placeholder="Enter Owner Name">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="emailInput" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="emailInput" placeholder="Enter Email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phoneInput" class="form-label">Phone</label>
+                                        <input type="text" class="form-control" id="phoneInput" placeholder="Enter Phone Number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="listingsInput" class="form-label">Listings</label>
+                                        <input type="number" class="form-control" id="listingsInput" placeholder="Number of Listings">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="assignedSelect" class="form-label">Assignee To</label>
+                                        <div id="assignedSelect" class="vscomp-ele pop-comp-ele"><div id="vscomp-ele-wrapper-3616" class="vscomp-ele-wrapper vscomp-wrapper multiple has-select-all has-clear-button closed has-search-input popup-position-center" tabindex="0" role="combobox" aria-haspopup="listbox" aria-controls="vscomp-dropbox-container-3616" aria-expanded="false" aria-label="Options list">
+        <input type="hidden" name="" class="vscomp-hidden-input" value="">
+        <div class="vscomp-toggle-button">
+          <div class="vscomp-value" data-tooltip="Select" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">Select</div>
+          <div class="vscomp-arrow"></div>
+          <div class="vscomp-clear-button toggle-button-child" data-tooltip="Clear" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="false" data-tooltip-allow-html="false" tabindex="-1" role="button" aria-label="Clear button" aria-hidden="true">
+            <i class="vscomp-clear-icon"></i>
+          </div>
+        </div>
+
+        <div id="vscomp-dropbox-container-3616" role="listbox" class="vscomp-dropbox-container pop-comp-wrapper position-bottom" data-from-left="0" data-from-top="-30" data-top="0" data-left="0" style="z-index: 2; display: none; transform: translate3d(0px, -30px, 0px);">
+        <div class="vscomp-dropbox-container-top" aria-hidden="true" tabindex="-1">&nbsp;</div>
+        <div class="vscomp-dropbox">
+          <div class="vscomp-search-wrapper"><div class="vscomp-search-container">
+        <span class="vscomp-toggle-all-button" tabindex="0" aria-label="Select All">
+          <span class="checkbox-icon vscomp-toggle-all-checkbox"></span>
+          <span class="vscomp-toggle-all-label">Select All</span>
+        </span>
+        <label for="vscomp-search-input-3616" class="vscomp-search-label" id="vscomp-search-label-3616">
+        Search
+      </label>
+      <input type="text" class="vscomp-search-input" placeholder="Search..." id="vscomp-search-input-3616">
+      <span class="vscomp-search-clear" role="button" aria-label="Clear search input">×</span>
+      </div></div>
+
+          <div class="vscomp-options-container" style="max-height: 200px;">
+            <div class="vscomp-options-loader"></div>
+
+            <div class="vscomp-options-list" style="height: 240px;">
+              <div class="vscomp-options" data-top="0" style="transform: translate3d(0px, 0px, 0px);"><div role="option" aria-selected="false" id="vscomp-option-3616-0" class="vscomp-option" data-value="Max Boucaut" data-index="0" data-visible-index="0" tabindex="-1" style="height: 40px;">
+          <span class="checkbox-icon"></span>
+          <span class="vscomp-option-text" data-tooltip="Max Boucaut" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Max Boucaut
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-3616-1" class="vscomp-option" data-value="Natasha Tegg" data-index="1" data-visible-index="1" tabindex="-1" style="height: 40px;">
+          <span class="checkbox-icon"></span>
+          <span class="vscomp-option-text" data-tooltip="Natasha Tegg" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Natasha Tegg
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-3616-2" class="vscomp-option" data-value="Ethan Zahel" data-index="2" data-visible-index="2" tabindex="-1" style="height: 40px;">
+          <span class="checkbox-icon"></span>
+          <span class="vscomp-option-text" data-tooltip="Ethan Zahel" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Ethan Zahel
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-3616-3" class="vscomp-option" data-value="Ryan Frazer" data-index="3" data-visible-index="3" tabindex="-1" style="height: 40px;">
+          <span class="checkbox-icon"></span>
+          <span class="vscomp-option-text" data-tooltip="Ryan Frazer" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Ryan Frazer
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-3616-4" class="vscomp-option" data-value="Julian Marconi" data-index="4" data-visible-index="4" tabindex="-1" style="height: 40px;">
+          <span class="checkbox-icon"></span>
+          <span class="vscomp-option-text" data-tooltip="Julian Marconi" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Julian Marconi
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-3616-5" class="vscomp-option" data-value="Poppy Dalley" data-index="5" data-visible-index="5" tabindex="-1" style="height: 40px;">
+          <span class="checkbox-icon"></span>
+          <span class="vscomp-option-text" data-tooltip="Poppy Dalley" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Poppy Dalley
+          </span>
+          
+          
+        </div></div>
+            </div>
+          </div>
+
+          <div class="vscomp-options-bottom-freezer"></div>
+          <div class="vscomp-no-options" tabindex="-1" aria-hidden="true">No options found</div>
+          <div class="vscomp-no-search-results" tabindex="-1" aria-hidden="true">No results found</div>
+
+          <span class="vscomp-dropbox-close-button"><i class="vscomp-clear-icon"></i></span>
+        </div>
+        <div class="vscomp-dropbox-container-bottom" aria-hidden="true" tabindex="-1">&nbsp;</div>
+      </div>
+      </div></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="statusSelect2" class="form-label">Status</label>
+                                        <div id="statusSelect2" class="vscomp-ele pop-comp-ele"><div id="vscomp-ele-wrapper-9931" class="vscomp-ele-wrapper vscomp-wrapper has-clear-button closed popup-position-center" tabindex="0" role="combobox" aria-haspopup="listbox" aria-controls="vscomp-dropbox-container-9931" aria-expanded="false" aria-label="Options list">
+        <input type="hidden" name="" class="vscomp-hidden-input">
+        <div class="vscomp-toggle-button">
+          <div class="vscomp-value" data-tooltip="Select" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Select
+          </div>
+          <div class="vscomp-arrow"></div>
+          <div class="vscomp-clear-button toggle-button-child" data-tooltip="Clear" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="false" data-tooltip-allow-html="false" tabindex="-1" role="button" aria-label="Clear button">
+            <i class="vscomp-clear-icon"></i>
+          </div>
+        </div>
+
+        <div id="vscomp-dropbox-container-9931" role="listbox" class="vscomp-dropbox-container pop-comp-wrapper position-bottom" data-from-left="0" data-from-top="-30" data-top="0" data-left="0" style="z-index: 2; display: none; transform: translate3d(0px, -30px, 0px);">
+        <div class="vscomp-dropbox-container-top" aria-hidden="true" tabindex="-1">&nbsp;</div>
+        <div class="vscomp-dropbox">
+          <div class="vscomp-search-wrapper"></div>
+
+          <div class="vscomp-options-container" style="max-height: 200px;">
+            <div class="vscomp-options-loader"></div>
+
+            <div class="vscomp-options-list" style="height: 160px;">
+              <div class="vscomp-options" data-top="0" style="transform: translate3d(0px, 0px, 0px);"><div role="option" aria-selected="false" id="vscomp-option-9931-0" class="vscomp-option" data-value="Active" data-index="0" data-visible-index="0" tabindex="-1" style="height: 40px;">
+          
+          <span class="vscomp-option-text" data-tooltip="Active" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Active
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-9931-1" class="vscomp-option" data-value="On Hold" data-index="1" data-visible-index="1" tabindex="-1" style="height: 40px;">
+          
+          <span class="vscomp-option-text" data-tooltip="On Hold" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            On Hold
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-9931-2" class="vscomp-option" data-value="Pending" data-index="2" data-visible-index="2" tabindex="-1" style="height: 40px;">
+          
+          <span class="vscomp-option-text" data-tooltip="Pending" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Pending
+          </span>
+          
+          
+        </div><div role="option" aria-selected="false" id="vscomp-option-9931-3" class="vscomp-option" data-value="Completed" data-index="3" data-visible-index="3" tabindex="-1" style="height: 40px;">
+          
+          <span class="vscomp-option-text" data-tooltip="Completed" data-tooltip-enter-delay="200" data-tooltip-z-index="2" data-tooltip-font-size="14px" data-tooltip-alignment="center" data-tooltip-max-width="300px" data-tooltip-ellipsis-only="true" data-tooltip-allow-html="true">
+            Completed
+          </span>
+          
+          
+        </div></div>
+            </div>
+          </div>
+
+          <div class="vscomp-options-bottom-freezer"></div>
+          <div class="vscomp-no-options" tabindex="-1" aria-hidden="true">No options found</div>
+          <div class="vscomp-no-search-results" tabindex="-1" aria-hidden="true">No results found</div>
+
+          <span class="vscomp-dropbox-close-button"><i class="vscomp-clear-icon"></i></span>
+        </div>
+        <div class="vscomp-dropbox-container-bottom" aria-hidden="true" tabindex="-1">&nbsp;</div>
+      </div>
+      </div></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end mt-5 gap-2">
+                                    <button class="btn btn-active-danger d-flex align-items-center" data-bs-dismiss="modal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" class="lucide lucide-x size-4 me-1"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg> Close
+                                    </button>
+                                    <button class="btn btn-primary" id="addProjectBtn">
+                                        Add Agency
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="w-100">
+            <div class="row align-items-center">
+                <div class="col-lg-6 d-none d-lg-block">
+                    
+                </div>
+                <div class="col-lg-6 text-muted text-center text-lg-end">
+                    <div>
+                        © <span id="currentYearFooter">2026</span> Verta
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></div>
+</div>
+</div>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+    
+</body>
+</html>

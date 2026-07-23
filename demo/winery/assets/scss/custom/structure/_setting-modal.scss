@@ -1,0 +1,129 @@
+// src/assets/scss/custom/structure/_setting-modal.scss
+
+.setting-modal {
+
+    .setting-widget {
+        .setting-widget-wrapper {
+            display: flex;
+            gap: 0.25rem;
+            padding: 6px 16px;
+            background-color: var(--#{$prefix}tertiary-bg);
+
+            span {
+                height: 6px;
+                width: 6px;
+                display: inline-block;
+                @include border-radius($border-radius-pill);
+            }
+        }
+
+        &.setting-vertical-widget {
+            display: block;
+            overflow: hidden;
+            height: 112px;
+            cursor: pointer;
+
+            .setting-widget-content {
+                height: calc(100% - 8px);
+
+                .custom-height-element {
+                    height: 0.375rem;
+                }
+            }
+        }
+    }
+
+    #navigationType {
+        .form-check-label {
+            outline: none;
+        }
+    }
+
+    .form-check {
+        padding-left: 0;
+    }
+
+    .form-check-label {
+        &.system-mode {
+            &::before {
+                content: '';
+                @include position(absolute, 0, 0, 0, 50%);
+                background-color: var(--#{$prefix}black);
+                width: 50%;
+            }
+        }
+    }
+
+    input[type="radio"]:checked+.form-check-label {
+        outline: 1px solid var(--#{$prefix}primary);
+
+        &.outline-offset-2 {
+            outline-offset: 2px;
+        }
+    }
+
+    .grayscale {
+        filter: grayscale(100%);
+    }
+
+    .custom-size-element {
+        height: 0.375rem;
+        width: 0.375rem;
+    }
+
+    .sidebar-color-2 {
+        background-color: $sidebar-dark-bg;
+    }
+
+    .sidebar-color-3 {
+        background-color: $sidebar-green-bg;
+    }
+
+    .sidebar-color-4 {
+        background-color: $sidebar-blue-bg;
+    }
+
+    .sidebar-color-5 {
+        background-color: $sidebar-purple-bg;
+    }
+
+    @mixin theme-color-class($class, $color-variable) {
+        .#{$class} {
+            background-color: $color-variable;
+        }
+    }
+
+    @each $color in (primary, blue, purple, orange, cyan, emerald, crimson, gold) {
+        @if $color ==primary {
+            @include theme-color-class('theme-color-1', $primary);
+        }
+
+        @else if $color ==blue {
+            @include theme-color-class('theme-color-2', #2563eb);
+        }
+
+        @else if $color ==purple {
+            @include theme-color-class('theme-color-3', #bd38c9);
+        }
+
+        @else if $color ==orange {
+            @include theme-color-class('theme-color-4', #f1893d);
+        }
+
+        @else if $color ==cyan {
+            @include theme-color-class('theme-color-5', #13a5c9);
+        }
+
+        @else if $color ==emerald {
+            @include theme-color-class('theme-color-6', #20c08e);
+        }
+        
+        @else if $color ==crimson {
+            @include theme-color-class('theme-color-7', #ea3939);
+        }
+
+        @else if $color ==gold {
+            @include theme-color-class('theme-color-8', #ca8a04);
+        }
+    }
+}

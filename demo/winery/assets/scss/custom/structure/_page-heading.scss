@@ -1,0 +1,17 @@
+// src/assets/scss/custom/structure/_page-heading.scss
+
+.page-heading {
+    @include flexStyle(center);
+    margin-bottom: 24px !important;
+    margin-top: 8px;
+    @include media-breakpoint-down(md) { 
+        align-items: start;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: '\f054';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: var(--text-muted)
+    }
+}

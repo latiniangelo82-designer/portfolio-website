@@ -1,0 +1,88 @@
+// src/assets/scss/custom/components/_dropdown.scss
+
+.dropdown-menu {
+    .dropdown-item {
+        @include border-radius();
+        @include transition;
+    }
+}
+
+:is(.dropdown .dropdown-toggle, .dropdown-toggle-split.dropdown-toggle) {
+    &::after {
+        content: '\e06d';
+        font-family: "lucide" !important;
+        border: none;
+        font-size: 20px;
+        line-height: 0.8;
+        margin-top: 0;
+        vertical-align: -0.2rem;
+    }
+
+    &.show {
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.dropend {
+    .dropdown-toggle {
+        &::after {
+            content: '\e06d';
+            font-family: "lucide" !important;
+            border: none !important;
+            font-size: 20px;
+            line-height: 0.8;
+            margin-top: 3.2px;
+            transform: rotate(-90deg);
+        }
+
+        &:hover {
+            &::after {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+.dropstart {
+    .dropdown-toggle {
+        &::before {
+            content: '\e06d';
+            font-family: "lucide" !important;
+            border: none;
+            font-size: 20px;
+            line-height: 0.8;
+            margin-top: 3.2px;
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.dropup {
+    .dropdown-toggle {
+        &::after {
+            content: '\e06d';
+            font-family: "lucide" !important;
+            border: none;
+            font-size: 20px;
+            line-height: 0.8;
+            margin-top: 3.2px;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.verta-select{
+    height: 40px;
+    color: var(--text-main);
+    font-size: 14px;
+    border: 1px solid var(--border-main);
+    border-radius: $border-radius-pills;
+    justify-content: space-between;
+    @include transition;
+    &:hover{
+        border-color: var(--brand-color);
+        box-shadow: $input-shadow;
+    }
+}

@@ -1,0 +1,16 @@
+// src/assets/scss/custom/apps/_apps-tracking.scss
+
+.tracking-map {
+    height: 380px;
+    @include media-breakpoint-up(md) {
+        height: 510px;
+    }
+    @include media-breakpoint-up(xxl) {
+        height: 610px;
+    }
+}
+.tracking-cards {
+    @include media-breakpoint-up(xl) {
+        max-height: 710px;
+    }
+}

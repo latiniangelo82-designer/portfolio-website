@@ -1,0 +1,336 @@
+// src/assets/scss/custom/components/_card.scss
+.card-body{
+    padding: 16px !important;
+    .card-content{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            .card-content-left{
+                display: flex;
+                align-content: flex-end;
+                justify-content: space-between;
+                width: 100%;
+                .card-content-left-perc{
+                    display: flex;
+                    align-content: flex-end;
+                    flex-wrap: wrap;
+                    .h3-1{
+                        color: var(--green-main); 
+                    }
+                    .h3-2{
+                        color: var(--brand-color); 
+                    }
+                    .h3-3{
+                        color: var(--orange--400); 
+                    }
+                }
+            }
+    }
+    .pie-chart{
+        height: calc(100% - 43px);
+    }
+    .pie-chart-stat{
+        .stat{
+            .stat-accepted{
+                .stat-pill{
+                    width: 19px;
+                    height: 19px;
+                    border-radius: $border-radius-pills;
+                    margin-right: 8px;
+                }
+            }
+            &:nth-child(1){
+                    .stat-pill{
+                        background: var(--primary-200);
+                    }
+                }
+                &:nth-child(2){
+                    .stat-pill{
+                        background: var(--orange--300);
+                    }
+                }
+                &:nth-child(3){
+                    .stat-pill{
+                        background: var(--secondary-300);
+                    }
+                }
+        }
+    }
+    
+}
+
+.card {
+    margin-bottom: $spacer;
+    box-shadow: $shadow-sm;
+
+    &.card-h-100 {
+        height: calc(100% - $spacer);
+    }
+
+    .card-top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+    }
+    
+    .card-header {
+        padding-bottom: 0;
+        background-color: transparent;
+    }
+}
+.card-title {
+    font-size: 0.9375rem;
+}
+
+.card-hover-animate {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: translateY(-0.25rem);
+    }
+}
+
+.basic-card {
+    overflow: hidden;
+    .card-img-left {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+    .img-avatar {
+        top: 8%;
+        left: 23%;
+        .user {
+            height: 80px;
+            width: 80px;
+        }
+    }
+}
+
+.card-hover-effect {
+    @include transition;
+
+    .icon-bg {
+        height: 5rem;
+        width: 5rem;
+        @include flexStyle(center, center);
+    }
+
+    .icon-hover-bg {
+        @include position(absolute, 30px, null, null, 30px);
+        @include transition;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        transform: translateY(-6px);
+
+        .icon-hover-bg {
+            transform: scale(10);
+            border-radius: 100%;
+        }
+    }
+}
+
+.bg-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: $gray-900;
+    opacity: 0.4;
+}
+
+.bg-overlay-cards {
+    @include transition;
+
+    img {
+        @include transition;
+    }
+
+    .main-title {
+        transform: translateY(80px);
+        @include transition;
+    }
+
+    .transform-text {
+        transform: translateY(100%);
+        opacity: 0;
+        @include transition;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+
+        .main-title {
+            transform: translateY(0px);
+        }
+
+        .transform-text {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* BEGIN CARD DESIGN */
+.fancy-card {
+  height: 400px;
+
+}
+.hero-description-bk {
+  border-radius: 25px;
+  position: absolute;
+  top: 55%;
+  left: -7px;
+  height: 65%;
+  width: 108%;
+  transform: skew(16deg, -9deg);
+}
+
+.card-body-sm{
+    padding: 8px;
+    flex: 1 1 auto;
+    background: #fff;
+    border-radius: 16px;
+    .agent-contact-container{
+        background: var(--bg-main);
+        border-radius: $border-radius-pills;
+        margin: 16px 0;
+        .agent-contact-name{
+            margin-left: 8px;
+            p::first-child{
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.card{
+    border-radius: 16px !important;
+}
+
+.card-agents{
+    background: transparent;
+    box-shadow: none;
+    .card-header{
+        margin-bottom: 20px;
+        padding: 16px;
+    }
+    .card-header, .card-body{
+        background: #fff;
+        border-radius: 16px !important;
+    }
+}
+
+.property-card{
+    &:hover{
+        @include transition;
+        box-shadow: 0px 0px 1px 1px rgb(62 84 211);
+    }
+}
+
+.apt-detail-container{
+    width: calc(50% - 135px);
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 75px;
+    background: #fff;
+    padding: 16px;
+    .apt-detail-header{
+            display: none;
+        }
+    @media (max-width: 1199.98px) {
+        .apt-detail-header{
+            display: block;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+        width: calc(85% - 135px);
+        box-shadow: $shadow-md;
+        
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+    @media (max-width: 521px) {
+        .nav-link{
+            span{
+                display: none; 
+            }
+        }
+    }
+    .apt-detail-scroller{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: calc(100vh - 170px);
+    }
+    .referent-detail{
+        position: absolute;
+        width: 100%;
+        bottom: 75px;
+        left: 0;
+        z-index: 9;
+        padding: 12px;
+        box-shadow: $shadow-tp;
+    }
+
+}
+
+.property-gallery-wrapper{
+    width: 100%;
+    .gallery-main-container{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .gallery-thumb-container{
+        height: calc(50% - 8px);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.detail-docs{
+    i{
+        color: var(--green-main);
+    }
+}
+
+.offer-listing{
+    overflow-y: auto;
+    .card-offer {
+        padding: 16px;
+        border-radius: 16px;
+        box-shadow: $shadow-sm;
+        margin-top: 8px;
+        @media (max-width: 521px) {
+            width: 550px;
+        }
+    }
+}
+
+
+@media (max-width: 521px) {
+    .detail-docs{
+        .btn-secondary{
+            i{
+                margin: 0;
+            }
+            span{
+                display:none;
+            }
+        }
+    }
+}

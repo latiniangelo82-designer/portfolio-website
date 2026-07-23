@@ -1,0 +1,103 @@
+// src/assets/scss/_variables-custom.scss
+
+:root {
+    --brand-color: #8C2F39;
+    --brand-color-strong: #6F242D;
+    --secondary-color: #451F32;
+    --secondary-color-light: #7B3A5A;
+    --sourface-bg: #1A1A1A;
+    --text-main: #F1D8E4;
+    --text-accent: #D4A347;
+    --text-strong: #262626;
+    --text-muted: #8A8A8A;
+    --text-placeholder: #B0B0B0;
+    --text-disable: #646464;
+    --bg-main: #121212;
+    --bg-secondary: #451F32;
+    --border-main: #3F3F3F;
+    --bg-disabled: #3F3F3F;
+    --green-main: #3FA56B;
+    --red-main: #C74444;
+    --red-200: #F8D0D0;
+    --orange-main: #D4A347; 
+    --orange--200: #FFE1B9;
+    --orange--300: #F59E0B;
+    --orange--400: #D97706;
+    --primary-100: #EBEFFD;
+    --primary-200: #8294F2;
+    --secondary-300: #64748B;
+}
+
+$icons-xs: 12px;
+$icons-default: 20px;
+$icons-md: 24px;
+
+$border-radius-main: 8px;
+$border-radius-cards: 8px;
+$border-radius-pills: 999px;
+
+$shadow-xs: 0px 1px 2px 0px rgba(100, 116, 139, 0.10);
+$shadow-sm: 0px 4px 12px 0px rgba(0, 0, 0, 0.65);
+$shadow-md: 0px 12px 24px -4px rgba(100, 116, 139, 0.2);
+$shadow-tp: 0px -4px 12px -2px rgba(100, 116, 139, 0.2);
+
+$input-shadow: 0 0 0 2px rgba(140, 47, 57, 1);
+
+
+//topbar styles
+$topbar-height:   4.6875rem;
+$topbar-bg:       var(--#{$prefix}secondary-bg);
+$topbar-border:   var(--#{$prefix}border-color);
+$topbar-color:    var(--#{$prefix}secondary-color);
+$topbar-hover-color:    var(--#{$prefix}primary);
+
+//topbar dark
+$topbar-dark-bg:               #282e2c;
+
+//topbar green
+$topbar-green-bg:              $green-600;
+
+//topbar blue
+$topbar-blue-bg:             #425089;
+
+//topbar purple
+$topbar-purple-bg:                #83327a;
+
+//sidebar styles
+$sidebar-width:                 15.5rem;
+$sidebar-md-width:              10rem;
+$sidebar-sm-width:              76px;
+$sidebar-padding-y:             .625rem;
+$sidebar-padding-x:             1rem;
+$sidebar-font-size:             15px;
+
+//sidebar light
+$sidebar-bg:                        #0232ac;
+$sidebar-border:                    var(--#{$prefix}border-color);
+$sidebar-menu-title:                var(--#{$prefix}secondary-color);
+$sidebar-link-color:                var(--#{$prefix}secondary-color);
+$sidebar-dropdown-shadow:           0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+$sidebar-link-hover-color:          var(--#{$prefix}primary);
+$sidebar-link-bg-hover-color:       var(--#{$prefix}primary-bg-subtle);
+$sidebar-link-active-color:         var(--#{$prefix}primary);
+$sidebar-link-bg-active-color:      var(--#{$prefix}primary-bg-subtle);
+$sidebar-link-sub-color:            var(--#{$prefix}secondary-color);
+$sidebar-link-sub-hover-color:      var(--#{$prefix}primary);
+$sidebar-link-sub-active-color:     var(--#{$prefix}primary);
+$sidebar-link-sub-effect-color:     var(--#{$prefix}primary-bg-subtle);
+
+//sidebar dark
+$sidebar-dark-bg:                   #202322;
+//sidebar green
+$sidebar-green-bg:                  $green-600;
+//sidebar blue
+$sidebar-blue-bg:                 #425089;
+//sidebar purple
+$sidebar-purple-bg:                    #83327a;
+
+//boxed layout
+$boxed-bg:                    $primary;
+$boxed-width:                 2rem;
+
+//semibox layout
+$semibox-width:               .75rem;

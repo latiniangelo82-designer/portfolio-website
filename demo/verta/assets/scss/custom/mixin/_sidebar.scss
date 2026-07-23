@@ -1,0 +1,17 @@
+$themes-sidebar: (
+    "light": (
+        sidebar-bg:                             #{$sidebar-bg},
+    ),
+    "dark": (
+        sidebar-bg:                             #{$sidebar-dark-bg},
+    ),
+    "green": (
+        sidebar-bg:                             #{$sidebar-green-bg},
+    ),
+    "blue": (
+        sidebar-bg:                             #{$sidebar-blue-bg},
+    ),
+    "purple": (
+        sidebar-bg:                             #{$sidebar-purple-bg},
+    )
+);

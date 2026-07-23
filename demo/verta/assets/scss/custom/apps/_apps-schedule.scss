@@ -1,0 +1,45 @@
+// src/assets/scss/custom/apps/_apps-schedule.scss
+
+.schedule-date-line{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--#{$prefix}border-color);
+    z-index: 0;
+}
+.schedule-date{
+    letter-spacing: 1.5px;
+}
+
+.fc .fc-button-primary:disabled{
+    
+    background: var(--bg-secondary) !important;
+    color: var(--text-disable) !important;
+    padding: 8px 16px !important;
+    border-color: var(--bg-secondary) !important;
+}
+
+.fc-button-group{
+    border-radius: 999px !important;
+    background-color: var(--brand-color);
+    overflow: hidden;
+    button{
+        display: flex !important;
+    }
+}
+
+.fc .fc-button{
+    padding: 8px 16px !important;
+    border-radius: 999px !important;
+}
+
+.fc .fc-button-primary {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.fc-h-event .fc-event-title{
+    text-overflow: ellipsis;
+}

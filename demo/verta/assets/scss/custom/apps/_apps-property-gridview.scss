@@ -1,0 +1,61 @@
+// src/assets/scss/custom/apps/_apps-property-gridview.scss
+
+.property-card {
+    .propery-wrapper {
+        img {
+            transition: $transition-base;
+            height: 239px;
+        }
+        .img-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    .social-btn {
+        transition: $transition-base;
+        right: -50px;
+    }
+    &:hover {
+        .propery-wrapper {
+            .img-2 {
+                opacity: 1;
+                visibility: visible;
+            }
+            .img-1 {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        .social-btn {
+            right: 0px;
+        }
+    }
+}
+.backdrop-blur-md{
+    backdrop-filter: blur(5px);
+}
+
+.fc .fc-daygrid-event{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 30px;
+        left: 3px;
+        top: 3px;
+        background: var(--brand-color);
+        border-radius: 999px;
+    }
+}
+
+@media (max-width: 768px) {
+.properties-actions{
+    gap: 8px;
+}
+}

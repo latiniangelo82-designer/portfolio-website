@@ -1,0 +1,75 @@
+// src/assets/scss/custom/components/_breadcrumb.scss
+
+.breadcrumb-item {
+    font-weight: $font-weight-medium;
+
+    a {
+        color: var(--text-main);
+    }
+    &.active{
+        color: var(--text-muted);
+    }
+}
+
+:is(.double-arrow, .single-arrow, .dash-arrow) {
+    .breadcrumb-item + .breadcrumb-item {
+        &::before {
+            float: left;
+            font-family: "RemixIcon";
+            color: var(--#{$prefix}breadcrumb-divider-color);
+        }
+    }
+}
+
+.double-arrow .breadcrumb-item + .breadcrumb-item::before {
+    content: "\f2e4";
+}
+
+.single-arrow .breadcrumb-item + .breadcrumb-item::before {
+    content: "\ea6e";
+}
+
+.dash-arrow .breadcrumb-item + .breadcrumb-item::before {
+    content: "\F1AF";
+}
+
+.multi-steps {
+    .breadcrumb-item {
+        padding: $btn-padding-y $btn-padding-x;
+        background-color: var(--#{$prefix}primary);
+        @include border-radius($border-radius);
+        color: var(--#{$prefix}primary);
+        margin-right: 30px;
+        text-align: center;
+        position: relative;
+
+        a {
+            color: $white;
+        }
+
+        &::before {
+            content: " ";
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            top: 50%;
+            left: 101%;
+            transform: translateY(-50%) translateX(-1px);
+            background-color: var(--#{$prefix}primary);
+        }
+
+        &:nth-last-child(2)::before {
+            background-color: var(--#{$prefix}light);
+        }
+
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+        &.active {
+            background-color: var(--text-muted);
+            
+        }
+    }
+}

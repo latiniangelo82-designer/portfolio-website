@@ -1,0 +1,78 @@
+// src/assets/scss/custom/dashboard/_index.scss
+
+.swiper-buttons {
+    top: 25px;
+    width: 95px;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: var(--#{$prefix}secondary-bg);
+        @include flexStyle(center, center);
+        height: 32px;
+        width: 32px;
+        font-size: 22px;
+        color: var(--#{$prefix}body-color);
+        @include border-radius($border-radius-pill);
+        @include transition;
+
+        &:hover{
+            background-color: var(--#{$prefix}primary);
+            color: var(--#{$prefix}white);
+        }
+    }
+}
+
+.goal-achieved-poster {
+    background: url("../../../images/apps/property-5.jpg");
+    background-size: cover;
+    background-position: center;
+    .bg-overlay {
+        opacity: 0.8;
+    }
+    .fire-cracker {
+        right: -20px;
+        opacity: 0.65;
+    }
+}
+.welcome-card {
+    background-image: url("../../../images/dashboards/main/welcome-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: 375px) and (max-width: 425px) {
+        p {
+            max-width: 295px;
+        }
+    }
+
+    .welcome-vector {
+        top: 16px;
+        right: -25px;
+        width: 170px;
+
+        @media (max-width: 375px) {
+            display: none;
+        }
+    }
+}
+
+[data-bs-theme=dark] {
+    .welcome-card {
+        background-image: none;
+    }
+}
+
+.circular-progress {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid var(--#{$prefix}white);
+        height: 90%;
+        width: 90%;
+        @include border-radius($border-radius-pill);
+    }
+}

@@ -1,0 +1,51 @@
+// src/assets/scss/custom/components/_gallery.scss
+
+.basic-gallery {
+  img {
+    transition: transform 5s ease-in-out;
+  }
+
+  &:hover>img {
+    transform: scale(1.25);
+  }
+}
+
+@media (min-width: 992px) {
+  .item-4 {
+    margin-top: -9rem;
+  }
+
+  .item-6 {
+    margin-top: -7rem;
+  }
+
+  .item-7 {
+    margin-top: -17rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .item-3 {
+    margin-top: -9rem;
+  }
+
+  .item-5 {
+    margin-top: -3rem;
+  }
+
+  .item-7 {
+    margin-top: -3rem;
+  }
+}
+
+// Glightbox
+.goverlay{
+  background: rgba(0,0,0,.82);
+  backdrop-filter: blur(4px);
+}
+.glightbox-clean .gslide-media{
+  box-shadow: none;
+}
+.gslide-image img{
+  @include border-radius($border-radius);
+}

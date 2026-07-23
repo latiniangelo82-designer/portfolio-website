@@ -1,0 +1,24 @@
+// src/assets/scss/custom/pages/_pages-coming-soon.scss
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--#{$prefix}secondary), var(--#{$prefix}primary));
+    -webkit-background-clip: text;
+    filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.1));
+    color: transparent;
+}
+
+.coming-soon-input {
+    max-width: 36rem;
+    margin: 0 auto;
+    position: relative;
+
+    .form-control {
+        padding-right: 126px;
+        height: 48px;
+    }
+
+    button {
+        @include position(absolute, 50%, 0.1875rem, null, null);
+        transform: translateY(-50%);
+    }
+}
